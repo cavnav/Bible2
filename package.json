@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "reload -b"
+  },
+  "devDependencies": {
+    "reload": "^3.2.0"
+  }
+}
