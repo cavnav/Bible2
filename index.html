@@ -2,15 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
+
 	<script src="BibleSource.js"></script>
 	<script src="ym.js"></script>
+	<script type="module" src="search.js"></script>
+
 	<link rel="stylesheet" href="styles.css" />
 	<title>Библия. Полный текст Священного Писания.</title>
+
+	<style>
+		#_searchBox {
+			position: relative;
+		}
+
+		#_booksSuggestion {
+			position: absolute;
+		}
+	</style>
 </head>
 <body>
-	<div id="sourceEl"></div>
-<script>
-	sourceEl.innerHTML = source;
-</script>
+	<div id="_searchBox">
+		<input
+			id="_search" 
+			type="text" 
+			placeholder="введите книгу"         
+    	>
+    	<div id="_booksSuggestion"></div>
+	</div>
+
+	<div id="_content"></div>
+
+	<script>
+		_content.innerHTML = content;
+	</script>
 </body>
 </html>
