@@ -30,6 +30,7 @@ export function showBooks(input) {
     .map((book) => `<li data-id="${book.id}">${book.name}</li>`)
     .join("")}`;
 
+
     
   ul.innerHTML = items;
 
