@@ -1,3 +1,15 @@
-div {
+.spacer30 {
+    margin: 600px 0;
+  }
+  #go {
+    float: right;
+    width: 50px;
+  }
+  #searchItem {
+    float: left;
+    width: 200px;
     
-}
+  }
+  .input-group {
+    width: 260px;
+  }
