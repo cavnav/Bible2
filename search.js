@@ -37,8 +37,7 @@ export function showBooks(input) {
   booksSuggestion.innerHTML = "";
   booksSuggestion.append(ul);
 } */
-
-import booksMapHtml from "/books/booksIdMap.json" assert {type: 'json'};
+import booksMapHtml from "./booksIdMap.json" assert {type: 'json'};
 
 const BOOKS = [{
     id: "1",
