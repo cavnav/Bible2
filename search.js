@@ -1,4 +1,4 @@
-import booksIdMap from "./booksIdMap.json" assert {type: 'json'};
+import booksMapHtml from "./booksMapHtml.json" assert {type: 'json'};
 
 const BOOKS = [{
     id: "1",
@@ -34,7 +34,7 @@ export function showBooks(input) {
     ul.style.padding ="10px";
     ul.style.border = "1px solid gray";
     ul.onclick = (event) => {
-        const location = booksIdMap[event.target.dataset.id];
+        const location = booksMapHtml[event.target.dataset.id];
         fetch(location)
         .then((response) => response.text())
         .then((content) => {
