@@ -1,71 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <script src="BibleSource.js"></script>
-	<!--<script type="module">
-		import {showBooks} from "./search.js";
-    import "./search.js"; 
-	</script>-->
-    <script src="ym.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Библия. Полный текст Священного Писания.</title>
-  </head>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
 
-  <body>
-    <input
-      type="text"
-      placeholder="введите книгу"
-      onKeyup="showItems(this.value)"
-      onClick="showItems(this.value)"
-    />
-    <div id="booksSuggestion"></div>
-      
-    <div id="sourceEl"></div>
+	<script src="./books/booksIdMap.js"></script>
+	<script src="ym.js"></script>
+	<!-- <script type="module" src="search.js"></script> -->
 
+	<link rel="stylesheet" href="styles.css" />
+	<title>Библия. Полный текст Священного Писания.</title>
 
+	<style>
+		#_searchBox {
+			position: relative;
+		}
 
+		#_booksSuggestion {
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="_searchBox">
+		<input
+			id="_search" 
+			type="text" 
+			placeholder="введите книгу"         
+    	>
+    	<div id="_booksSuggestion"></div>
+	</div>
 
-    
-    <script src="/books/booksIdMap.js">
-      /*const BOOKS = [{
-              id: "001",
-              name: "Бытие",
-          },
-          {
-              id: "002",
-              name: "Исход",
-          },
-          {
-              id: "003",
-              name: "Левит",
-          },
-      ];*/
+	<div id="_content"></div>
 
-      function getSuggestions(input) {
-          return BOOKS.filter((book) => book.name.toLowerCase().includes(input.toLowerCase()));
-      }
-
-      function showItems(input) {
-          const suggestions = getSuggestions(input);
-          const ul = document.createElement('ul');
-          ul.onclick = (event) => console.log(event.target.dataset.id);
-          const items = `${
-              suggestions.map((book) => `<li data-id="${book.id}">${book.name}</li>`).join('')
-          }`;
-
-          ul.innerHTML = items;
-
-          booksSuggestion.innerHTML = "";
-          booksSuggestion.append(ul);
-      }
-  </script>
-  
-
-
-
-    <script>
-      sourceEl.innerHTML = source;
-    </script>
-  </body>
+	<script type="module">
+		import { showBooks } from "./search.js";
+		console.log(showBooks);
+		_content.innerHTML = content;
+	</script>
+</body>
 </html>

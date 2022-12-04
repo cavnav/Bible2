@@ -1,43 +1,4 @@
-/*import Bible from "./books/booksIdMap.js" assert {type: 'js'};
-
-
-const BOOKS = [
-  {
-    id: "001",
-    name: "Бытие",
-  },
-  {
-    id: "002",
-    name: "Исход",
-  },
-  {
-    id: "003",
-    name: "Левит",
-  },
-];
-
-function getSuggestions(input) {
-  return BOOKS.filter((book) =>
-    book.name.toLowerCase().includes(input.toLowerCase())
-  );
-}
-
-export function showBooks(input) {
-  const suggestions = getSuggestions(input);
-  const ul = document.createElement("ul");
-  ul.onclick = (event) => window.location = booksMapHtml[event.target.dataset.id];
-  const items = `${suggestions
-    .map((book) => `<li data-id="${book.id}">${book.name}</li>`)
-    .join("")}`;
-
-
-    
-  ul.innerHTML = items;
-
-  booksSuggestion.innerHTML = "";
-  booksSuggestion.append(ul);
-} */
-import booksMapHtml from "./booksIdMap.json" assert {type: 'json'};
+import booksIdMap from "./booksIdMap.json" assert {type: 'json'};
 
 const BOOKS = [{
     id: "1",
@@ -73,7 +34,7 @@ export function showBooks(input) {
     ul.style.padding ="10px";
     ul.style.border = "1px solid gray";
     ul.onclick = (event) => {
-        const location = booksMapHtml[event.target.dataset.id];
+        const location = booksIdMap[event.target.dataset.id];
         fetch(location)
         .then((response) => response.text())
         .then((content) => {
