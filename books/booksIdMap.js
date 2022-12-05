@@ -81,7 +81,7 @@ const BOOKS = [{
     "066": "" 
 }];*/
 ]
-
+/*
 function getSuggestions(input) {
     return BOOKS.filter((book) => book.name.toLowerCase().includes(input.toLowerCase()));
 }
@@ -98,4 +98,4 @@ function showItems(input) {
 
     booksSuggestion.innerHTML = "";
     booksSuggestion.append(ul);
-}
+}*/
