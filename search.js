@@ -1,7 +1,7 @@
-import booksMapHtml from "./booksMapHtml.json" assert {type: 'json'};
+import pip from "/pip.json" assert {type: 'json'};
 
 const BOOKS = [{
-    id: "1",
+    id: "001",
     name: "Бытие",
 },
 {
@@ -34,7 +34,7 @@ export function showBooks(input) {
     ul.style.padding ="10px";
     ul.style.border = "1px solid gray";
     ul.onclick = (event) => {
-        const location = booksMapHtml[event.target.dataset.id];
+        const location = pip[event.target.dataset.id];
         fetch(location)
         .then((response) => response.text())
         .then((content) => {
