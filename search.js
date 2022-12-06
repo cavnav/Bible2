@@ -1,38 +1,6 @@
-import booksMapHtml from "/booksMapHtml.json" assert {type: 'json'};
-const BOOKS = [{
-    id: "001",
-    name: "Бытие",/* genesis.html */
-},
-{
-    id: "002",
-    name: "Исход", /*exodus.html */
-},
-{
-    id: "003",
-    name: "Ливит",/*leviticus.html */
-},  
-{
-    id: "004",
-    name: "Числа",/*numeri.html*/
+import { BOOKS_MAP_HTML } from "./meta/booksMapHtml.js";
+import { BOOKS } from "./meta/booksIdMap.js";
 
-},
-]
-
-
-/*
-const BOOKS = [{
-    id: "001",
-    name: "Бытие",
-},
-{
-    id: "2",
-    name: "Исход",
-},
-{
-    id: "3",
-    name: "Левит",
-},
-];*/
 
 
 init();
@@ -48,6 +16,7 @@ function getSuggestions(input) {
 }
 
 export function showBooks(input) {
+    _booksSuggestion.classList.remove("hide");
     const suggestions = getSuggestions(input);
     const ul = document.createElement('ul');
     ul.style.background = "white";
@@ -55,11 +24,12 @@ export function showBooks(input) {
     ul.style.padding ="10px";
     ul.style.border = "1px solid gray";
     ul.onclick = (event) => {
-        const location = booksMapHtml[event.target.dataset.id];
+        const location = BOOKS_MAP_HTML[event.target.dataset.id];
         fetch(location)
         .then((response) => response.text())
         .then((content) => {
             _content.innerHTML = content;
+            _booksSuggestion.classList.add("hide");
         });
     }
     const items = `${suggestions.map((book) => `<li data-id="${book.id}">${book.name}</li>`).join('')
