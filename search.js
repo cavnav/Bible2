@@ -1,5 +1,25 @@
-import pip from "/pip.json" assert {type: 'json'};
+import booksMapHtml from "/booksMapHtml.json" assert {type: 'json'};
+const BOOKS = [{
+    id: "001",
+    name: "Бытие",/* genesis.html */
+},
+{
+    id: "002",
+    name: "Исход", /*exodus.html */
+},
+{
+    id: "003",
+    name: "Ливит",/*leviticus.html */
+},  
+{
+    id: "004",
+    name: "Числа",/*numeri.html*/
 
+},
+]
+
+
+/*
 const BOOKS = [{
     id: "001",
     name: "Бытие",
@@ -12,7 +32,8 @@ const BOOKS = [{
     id: "3",
     name: "Левит",
 },
-];
+];*/
+
 
 init();
 
@@ -34,7 +55,7 @@ export function showBooks(input) {
     ul.style.padding ="10px";
     ul.style.border = "1px solid gray";
     ul.onclick = (event) => {
-        const location = pip[event.target.dataset.id];
+        const location = booksMapHtml[event.target.dataset.id];
         fetch(location)
         .then((response) => response.text())
         .then((content) => {
