@@ -1,269 +1,336 @@
 export const BOOKS = [{
         id: "001",
-        name: "Бытие",/* genesis.html */
+        name: "Бытие",
+        url: "/books/genesis.html"
     },
     {
         id: "002",
-        name: "Исход", /*exodus.html */
+        name: "Исход", 
+        url: "/books/exodus.html"
     },
     {
         id: "003",
-        name: "Левит",/*leviticus.html */
+        name: "Левит",
+        url: "/books/leviticus.html"
     },  
     {
         id: "004",
-        name: "Числа",/*numeri.html*/
+        name: "Числа",
+        url: "/books/numbers.html"
     },
     {
         id: "005",
-        name: "Второзаконие",/*deuteronomy.html*/
+        name: "Второзаконие",
+        url: "/books/deuteronomy.html"
     },
     {
         id: "006",
-        name: "Иисус Навин",/*joshua.html */
+        name: "Иисус Навин",
+        url: "/books/joshua.html"
     },
     {
         id: "007",
-        name: "Судьи",/*judges.html */
+        name: "Судьи",
+        url: "/books/judges.html"
     },
     {
         id: "008",
-        name: "Руфь",/*ruth.html */
+        name: "Руфь",
+        url: "/books/ruth.html"
     },
     {
         id: "009",
-        name: "1-я Царств",/*1 samuel.html */
+        name: "1-я Царств",
+        url: "/books/1 samuel.html"
     },
     {
         id: "010",
-        name: "2-я Царств",/*2 samuel.html */
+        name: "2-я Царств",
+        url: "/books/2 samuel.html"
     },
     {
         id: "011",
-        name: "3-я Царств",/*1 kings.html */
+        name: "3-я Царств",
+        url: "/books/1 kings.html"
     },
     {
         id: "012",
-        name: "4-я Царств",/*2 kings.html */
+        name: "4-я Царств",
+        url: "/books/2 kings.html"
     },
     {
         id: "013",
-        name: "1-я Паралипом",/*1 chronicles.html */
+        name: "1-я Паралипом",
+        url: "/books/1 chronicles.html"
     },
     {
         id: "014",
-        name: "2-я Паралипом",/*2 chronicles.html */
+        name: "2-я Паралипом",
+        url: "/books/2 chronicles.html"
     },
     {
         id: "015",
-        name: "Ездра",/*ezra.html */
+        name: "Ездра",
+        url: "/books/ezra.html"
     },
     {
         id: "016",
-        name: "Неемия",/*nehemiah.html */
+        name: "Неемия",
+        url: "/books/nehemiah.html"
     },
     {
         id: "017",
-        name: "Есфирь",/*esther.html */
+        name: "Есфирь",
+        url: "/books/esther.html"
     },
     {
         id: "018",
-        name: "Иов",/*job.html */
+        name: "Иов",
+        url: "/books/job.html"
     },
     {
         id: "019",
-        name: "Псалтирь",/*psalms.html */
+        name: "Псалтирь",
+        url: "/books/psalms.html"
     },
     {
         id: "020",
-        name: "Притчи",/*proverbs.html */
+        name: "Притчи",
+        url: "/books/proverbs.html"
     },
     {
         id: "021",
-        name: "Левит",/*leviticus.html */
+        name: "Левит",
+        url: "/books/leviticus.html"
     },
     {
         id: "021",
-        name: "Екклесиаст",/*ecclesiastes.html */
+        name: "Екклесиаст",
+        url: "/books/ecclesiastes.html"
     },
     {
         id: "022",
-        name: "Песни Песней",/*song_of_solomon.html*/
+        name: "Песни Песней",
+        url: "/books/song_of_solomon.html"
     },
     {
         id: "023",
-        name: "Исаия",/*isaiah.html */
+        name: "Исаия",
+        url: "/books/isaiah.html"
     },
     {
         id: "024",
-        name: "Иеремия",/*jeremiah.html */
+        name: "Иеремия",
+        url: "/books/jeremiah.html"
     },
     {
         id: "025",
-        name: "Плач Иеремии",/*lamentation.html */
+        name: "Плач Иеремии",
+        url: "/books/lamentation.html"
     },
     {
         id: "026",
-        name: "Иезекииль",/*ezekiel.html */
+        name: "Иезекииль",
+        url: "/books/ezekiel.html"
     },
     {
         id: "027",
-        name: "Даниил",/*daniel.html */
+        name: "Даниил",
+        url: "/books/daniel.html"
     },
     {
         id: "028",
-        name: "Осия",/*hosea.html */
+        name: "Осия",
+        url: "/books/hosea.html"
     },
     {
         id: "029",
-        name: "Иоиль",/*joel.html */
+        name: "Иоиль",
+        url: "/books/joel.html"
     },
     {
         id: "030",
-        name: "Амос",/*amos.html */
+        name: "Амос",
+        url: "/books/amos.html"
     },
     {
         id: "031",
-        name: "Авдий",/*obadiah.html */
+        name: "Авдий",
+        url: "/books/obadiah.html"
     },
     {
         id: "032",
-        name: "Иона",/*jonah.html */
+        name: "Иона",
+        url: "/books/jonah.html"
     },
     {
         id: "033",
-        name: "Михей",/*micah.html */
+        name: "Михей",
+        url: "/books/micah.html"
     },
     {
         id: "034",
-        name: "Наум",/*nahum.html */
+        name: "Наум",
+        url: "/books/nahum.html"
     },
     {
         id: "035",
-        name: "Аввакум",/*habakkuk.html */
+        name: "Аввакум",
+        url: "/books/habakkuk.html"
     },
     {
         id: "036",
-        name: "Софония",/*zephaniah.html */
+        name: "Софония",
+        url: "/books/zephaniah.html"
     },
     {
         id: "037",
-        name: "Аггей",/*haggai.html */
+        name: "Аггей",
+        url: "/books/haggai.html"
     },
     {
         id: "038",
-        name: "Захария",/*zechariah.html */
+        name: "Захария",
+        url: "/books/zechariah.html"
     },
     {
         id: "039",
-        name: "Малахия",/*malachi.html */
+        name: "Малахия",
+        url: "/books/malachi.html"
     },
     {
         id: "040",
-        name: "Евангелие Матфея",/*matthew.html */
+        name: "Евангелие Матфея",
+        url: "/books/matthew.html"
     },
     {
         id: "041",
-        name: "Евангелие Марка",/*mark.html */
+        name: "Евангелие Марка",
+        url: "/books/mark.html"
     },
     {
         id: "042",
-        name: "Евангелие Луки",/*luke.html */
+        name: "Евангелие Луки",
+        url: "/books/luke.html"
     },
     {
         id: "043",
-        name: "Евангелие Иоанна",/*john.html */
+        name: "Евангелие Иоанна",
+        url: "/books/john.html"
     },
     {
         id: "044",
-        name: "Деяния апостолов",/*acts.html */
+        name: "Деяния апостолов",
+        url: "/books/acts.html"
     },
     {
         id: "045",
-        name: "Римлянам",/*romans.html */
+        name: "Римлянам",
+        url: "/books/romans.html",
     },
     {
         id: "046",
-        name: "1-е Коринфянам",/*1 corinthians.html */
+        name: "1-е Коринфянам",
+        url: "/books/1 corinthians.html"
     },
     {
         id: "047",
-        name: "2-е Коринфянам",/*2 corinthians.html */
+        name: "2-е Коринфянам",
+        url: "/books/2 corinthians.html"
     },
     {
         id: "048",
-        name: "Галатам",/*galatians.html */
+        name: "Галатам",
+        url: "/books/galatians.html"
     },
     {
         id: "049",
-        name: "Ефесянам",/*ephesians.html */
+        name: "Ефесянам",
+        url: "/books/ephesians.html"
     },
     {
         id: "050",
-        name: "Филиппийцам",/*philippians.html */
+        name: "Филиппийцам",
+        url: "/books/philippians.html"
     },
     {
         id: "051",
-        name: "Колоссянам",/*colossians.html */
+        name: "Колоссянам",
+        url: "/books/colossians.html"
     },
     {
         id: "052",
-        name: "1-е Фессалоникийцам",/*1 thessalonias.html */
+        name: "1-е Фессалоникийцам",
+        url: "/books/1 thessalonias.html"
     },
     {
         id: "053",
-        name: "2-е Фессалоникийцам",/*2 thessalonias.html */
+        name: "2-е Фессалоникийцам",
+        url: "/books/2 thessalonias.html"
     },
     {
         id: "054",
-        name: "1-е Тимофею",/*1 timothy.html */
+        name: "1-е Тимофею",
+        url: "/books/1 timothy.html"
     },
     {
         id: "055",
-        name: "2-е Тимофею",/*2 timothy.html */
+        name: "2-е Тимофею",
+        url: "/books/2 timothy.html"
     },
     {
         id: "056",
-        name: "Титу",/*titus.html */
+        name: "Титу",
+        url: "/books/titus.html"
     },
     {
         id: "057",
-        name: "Филимону",/*philemon.html */
+        name: "Филимону",
+        url: "/books/philemon.html"
     },
     {
         id: "058",
-        name: "Евреям",/*hebrews.html */
+        name: "Евреям",
+        url: "/books/hebrews.html"
     },
     {
         id: "059",
-        name: "Иакова",/*james.html */
+        name: "Иакова",
+        url: "/books/james.html"
     },
     {
         id: "060",
-        name: "1-е Петра",/*1 peter.html */
+        name: "1-е Петра",
+        url: "/books/1 peter.html"
     },
     {
         id: "061",
-        name: "2-е Петра",/*2 peter.html */
+        name: "2-е Петра",
+        url: "/books/2 peter.html"
     },
     {
         id: "062",
-        name: "1-е Иоанна",/*1 john.html */
+        name: "1-е Иоанна",
+        url: "/books/1 john.html"
     },
     {
         id: "063",
-        name: "2-е Иоанна",/*2 john.html */
+        name: "2-е Иоанна",
+        url: "/books/2 john.html"
     },
     {
         id: "064",
-        name: "3-е Иоанна",/*3 john.html */
+        name: "3-е Иоанна",
+        url: "/books/3 john.html"
     },
     {
         id: "065",
-        name: "Послание Иуды",/*jude.html */
+        name: "Послание Иуды",
+        url: "/books/jude.html"
     },
     {
         id: "066",
-        name: "Откровение",/*revelation.html */
+        name: "Откровение",
+        url: "/books/revelation.html"
     }
 ];
