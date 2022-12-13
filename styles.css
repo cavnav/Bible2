@@ -1,3 +1,7 @@
+:root {
+  --offset_small: 10px;
+}
+
 .hide {
   display: none;
 }
@@ -9,4 +13,9 @@
   overflow-y: scroll;
   border: 1px solid gray;
   background: white;
+  margin: 0;
+}
+
+.search-options {
+  margin-bottom: var(--offset_small);
 }
