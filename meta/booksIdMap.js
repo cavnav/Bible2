@@ -100,11 +100,6 @@ export const BOOKS = [{
     },
     {
         id: "021",
-        name: "Левит",
-        url: "/books/leviticus.html"
-    },
-    {
-        id: "021",
         name: "Екклесиаст",
         url: "/books/ecclesiastes.html"
     },

@@ -1,6 +1,6 @@
 import { BOOKS } from "./meta/booksIdMap.js";
 
-
+let bookId;
 
 init();
 
@@ -9,7 +9,8 @@ function init() {
     _search.onkeyup = (event) => showSearchResults(event.target.value);
     _search.onclick = (event) => showSearchResults(event.target.value);
     const book = BOOKS[Math.floor(Math.random() * BOOKS.length)];
-    getContent(book.id);
+    bookId = book.id;
+    setContent(bookId);
 }
 
 function getSuggestions(input) {
@@ -22,11 +23,10 @@ export function showSearchResults(input) {
     const ul = document.createElement('ul');
     ul.id="search-result"
     ul.onclick = (event) => {
-        const bookId = event.target.dataset.id;
-        getContent(bookId);        
+        bookId = event.target.dataset.id;
+        setContent(bookId);        
     }
-    const items = `${suggestions.map((book) => `<li data-id="${book.id}">${book.name}</li>`).join('')
-        }`;
+    const items = `${suggestions.map((book) => `<li data-id="${book.id}">${book.name}</li>`).join('')}`;
 
     ul.innerHTML = items;
 
@@ -34,7 +34,7 @@ export function showSearchResults(input) {
     _booksSuggestion.append(ul);
 }
 
-function getContent(bookId) {
+function setContent(bookId) {
     const book = BOOKS.find((book) => book.id === bookId);
     if (book) {
         fetch(book.url)
