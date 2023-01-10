@@ -9,16 +9,6 @@
 	<script src="utils.js"></script>
 	<link rel="stylesheet" href="styles.css" />
 	<title>Библия. Полный текст Священного Писания.</title>
-
-	<style>
-		#_searchBox {
-			position: relative;
-		}
-
-		#_booksSuggestion {
-			position: absolute;
-		}
-	</style>
 </head>
 <body>
 	<div id="_searchBox" class="search-bar">
@@ -29,7 +19,9 @@
 				placeholder="введите книгу"         
 			>
 		</div>		
-    	<div id="_booksSuggestion"></div>
+    	<div class="scrollerWrap">
+			<div id="_booksSuggestion"></div>
+		</div>
 	</div>
 
 	<div id="_content" class="content"></div> 

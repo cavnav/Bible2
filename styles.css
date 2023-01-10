@@ -6,16 +6,35 @@
   display: none;
 }
 
-#search-result {
-  width: 400px;
+#_searchBox {
+  position: sticky;
+  top: 0;
+  height: 120px;
+  background: white;
+}
+
+.scrollerWrap {
+  padding-top: 10px;  
+}
+
+#_booksSuggestion {
   height: 200px;
-  padding: 10px;
   overflow-y: scroll;
+  direction: rtl;
+}
+
+#search-result {
+  padding: 10px;
   border: 1px solid gray;
   background: white;
   margin: 0;
+  direction: ltr;
 }
 
 .search-options {
   margin-bottom: var(--offset_small);
+}
+
+.content {
+  height: 100%;
 }
