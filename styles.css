@@ -10,7 +10,7 @@
   position: sticky;
   top: 0;
   height: 120px;
-  background: white;
+  background: rgb(110, 112, 221);
 }
 
 .scrollerWrap {
@@ -38,3 +38,14 @@
 .content {
   height: 100%;
 }
+
+ul li{
+  list-style:none;
+  }
+
+  input{
+    position: relative; 
+    left: 578px;
+    height:24px;
+    font-size: 15px;
+  }
