@@ -3,8 +3,7 @@ import { BOOKS } from "./meta/booksIdMap.js";
 let currentBookId;
 
 init();
-
-Object.entries(BOOKS);
+ 
 
 function init() {
     _search.onkeyup = (event) => showSearchResults(event.target.value);
