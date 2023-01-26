@@ -43,9 +43,17 @@ ul li{
   list-style:none;
   }
 
-  input{
-    position: relative; 
-    left: 578px;
-    height:24px;
-    font-size: 15px;
-  }
+ 
+
+  /* body {
+    -moz-transform: scale(0.8, 0.8);
+    zoom: 0.8;
+    zoom: 80%;
+ } */
+
+ .zoom {
+  position: fixed;
+  right: 0;
+  z-index: 100;
+}
+ 

@@ -10,5 +10,12 @@
 //         };
 // }
 
+function zoomPageInc(){
+    const value = document.body.style.zoom;
+    document.body.style.zoom=Number(value ? value : 1)*1.1;
+}
 
-
+function zoomPageDec(){
+    const value = document.body.style.zoom;
+    document.body.style.zoom=Number(value ? value : 1)*0.9;
+}
