@@ -2,15 +2,37 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8"/>
-
 	<script src="./books/genesis.html"></script>
 	<script src="ym.js"></script>
 	<script type="module" src="search.js"></script>
 	<script src="utils.js"></script>
+
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="styles.css" />
 	<title>Библия. Полный текст Священного Писания.</title>
 </head>
 <body>
+ <script>
+$(document).on("click touchstart", function(e) {
+  var t = $(e.target).closest('scrollerWrap');
+  var exceptDiv = $('scrollerWrap');
+  if (exceptDiv.is(t) == false) {
+    //clicked oustide of div
+    $("scrollerWrap").hide();
+  }
+});
+
+function DisplaySearchResultBox() {
+  $("scrollerWrap").show();
+}
+
+function doSomething() {
+  alert('Do Something');
+}
+ </script>
+
+	</script>
 		<div class="zoom">
 			Масштаб
 			<input 
@@ -18,18 +40,26 @@
 				value="+" 
 				onClick="zoomPageInc()"
 			/>
+			<input 
+				type="button" 
+				value="x" 
+				onClick="zoomReset()"
+			/>
 			<input
 				type="button"
 				value="-"
 				onClick="zoomPageDec()"
 			 />
 		</div>
+
+		<div id="SearchBoxContainer">
 	<div id="_searchBox" class="search-bar">
 		<div class="search-options">
 			<input
 				id="_search" 
 				type="text" 
-				placeholder="введите книгу"         
+				placeholder="введите книгу"
+				onfocus="DisplaySearchResultBox();"       
 			>
 		</div>		
     	<div class="scrollerWrap">
@@ -41,7 +71,7 @@
 	<script>		
 		_content.innerHTML = content;
 	</script>
-	
+	</div>
 
 </body>
 </html>

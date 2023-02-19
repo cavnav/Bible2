@@ -11,11 +11,18 @@
 // }
 
 function zoomPageInc(){
-    const value = document.body.style.zoom;
-    document.body.style.zoom=Number(value ? value : 1)*1.1;
+    zoomPage(1.1);
 }
 
 function zoomPageDec(){
+    zoomPage(0.9);
+}
+
+function zoomReset() {
+    zoomPage(0);
+}
+
+function zoomPage(scale) {
     const value = document.body.style.zoom;
-    document.body.style.zoom=Number(value ? value : 1)*0.9;
+    document.body.style.zoom=Number(value ? value : 1) * scale;
 }

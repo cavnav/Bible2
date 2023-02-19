@@ -2,6 +2,37 @@
   --offset_small: 10px;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSansRegular/OpenSans-Regular.eot');
+  src: url('./fonts/OpenSansRegular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/OpenSansRegular/OpenSans-Regular.woff2') format('woff2'),
+      url('./fonts/OpenSansRegular/OpenSans-Regular.woff') format('woff'),
+      url('./fonts/OpenSansRegular/OpenSans-Regular.ttf') format('truetype'),
+      url('./fonts/OpenSansRegular/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSansItalic/OpenSans-Italic.eot');
+  src: url('./fonts/OpenSansItalic/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/OpenSansItalic/OpenSans-Italic.woff2') format('woff2'),
+      url('./fonts/OpenSansItalic/OpenSans-Italic.woff') format('woff'),
+      url('./fonts/OpenSansItalic/OpenSans-Italic.ttf') format('truetype'),
+      url('./fonts/OpenSansItalic/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+.d1 {
+  font-family: 'Open Sans';
+  font-style: italic;
+}
+
 .hide {
   display: none;
 }
@@ -43,17 +74,17 @@ ul li{
   list-style:none;
   }
 
- 
-
-  /* body {
-    -moz-transform: scale(0.8, 0.8);
-    zoom: 0.8;
-    zoom: 80%;
- } */
-
  .zoom {
   position: fixed;
   right: 0;
   z-index: 100;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: larger; */
+}
+
+
+ 
  
