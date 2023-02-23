@@ -42,17 +42,21 @@ function setContent(bookId) {
         .then((response) => response.text())
         .then((content) => {
             _content.innerHTML = content;
+            const paragraph = document.createElement('div');
+            paragraph.classList.add("paragraph");
+            _content.append(paragraph);
             _booksSuggestion.classList.add("hide");
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
         });
     }
 }
 
+
 document.onscroll = () => {
     let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
-    
+    let windowRelativeTop = document.documentElement.scrollTop;
         // если пользователь прокрутил достаточно далеко (< 100px до конца)
-        if (windowRelativeBottom < document.documentElement.clientHeight + 100) {                       
+        if (windowRelativeBottom < document.documentElement.clientHeight) {                       
             let nextBookId;     // создаем переменную для айди следующей книги
             BOOKS.find((    // перебираем наш список
                 item,  // текущий элемент в нашем списке
@@ -64,5 +68,19 @@ document.onscroll = () => {
                 }
             });
             setContent(nextBookId); // используем нашу новую переменную , которая содержит в себе следующую книгу
-        }    
+        }  if (windowRelativeTop == 0) {
+            let previousBookId;
+            BOOKS.find((
+                item, ind
+            ) => {
+                if (item.id === currentBookId) {
+                    previousBookId = BOOKS[ind -1]? BOOKS[ind -1].id : BOOKS[0].id;
+                    return true;
+            }
+        });
+        setContent(previousBookId);
+
+        }
     };
+
+ 
