@@ -68,6 +68,8 @@ document.onscroll = () => {
                 }
             });
             setContent(nextBookId); // используем нашу новую переменную , которая содержит в себе следующую книгу
+            // если прокрутил наверх
+
         }  if (windowRelativeTop == 0) {
             let previousBookId;
             BOOKS.find((
