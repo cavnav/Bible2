@@ -86,8 +86,8 @@ body {
 }
 
 .paragraph {
-  height: 150px;
-  background: none;
+  height: 300px;
+  background: red;
 }
 
 

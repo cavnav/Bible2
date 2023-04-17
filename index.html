@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<script src="./books/genesis.html"></script>
 	<script src="ym.js"></script>
-	<script type="module" src="search.js"></script>
+	<script type="module" src="search_1.js"></script>
 	<script src="utils.js"></script>
 
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -52,24 +52,21 @@ function doSomething() {
 			 />
 		</div>
 
-		<div id="SearchBoxContainer">
-	<div id="_searchBox" class="search-bar">
-		<div class="search-options">
-			<input
-				id="_search" 
-				type="text" 
+	<div id="SearchBoxContainer">
+		<div id="_searchBox" class="search-bar">
+			<div class="search-options">
+				<input id="_search" type="text" 
 				placeholder="введите книгу"
-				onfocus="DisplaySearchResultBox();"       
-			>
-		</div>		
-    	<div class="scrollerWrap">
+				onfocus="DisplaySearchResultBox();">
+			</div>		
+    		<div class="scrollerWrap">
 			<div id="_booksSuggestion"></div>
+			</div>
 		</div>
-	</div>
 
 	<div id="_content" class="content"></div> 
 	<script>		
-		_content.innerHTML = content;
+		// _content.innerHTML = content;
 	</script>
 	</div>
 
